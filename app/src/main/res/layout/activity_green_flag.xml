@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000F"
+    tools:context=".GreenFlag">
+
+    <ImageView
+        android:id="@+id/LogoText"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_green_flag" />
+
+    <TextView
+        android:id="@+id/gfText1"
+        android:layout_width="266dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/museosans_500"
+        android:text="GreenFlag customers can create an account to access"
+        android:textColor="#FFFFFF"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogoText"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/gfText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="96dp"
+        android:ems="10"
+        android:fontFamily="@font/museosans_300"
+        android:text="Car health updates"
+        android:textColor="#FFFFFF"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gfText1"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageTick1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/gfText2"
+        app:layout_constraintTop_toBottomOf="@+id/gfText1"
+        app:srcCompat="@drawable/tick" />
+
+    <EditText
+        android:id="@+id/gfText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="96dp"
+        android:ems="10"
+        android:fontFamily="@font/museosans_300"
+        android:text="Request a rescue online"
+        android:textColor="#FFFFFF"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gfText2"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageTick2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/gfText3"
+        app:layout_constraintTop_toBottomOf="@+id/imageTick1"
+        app:srcCompat="@drawable/tick" />
+
+    <EditText
+        android:id="@+id/gfText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="96dp"
+        android:ems="10"
+        android:fontFamily="@font/museosans_300"
+        android:text="Policy information"
+        android:textColor="#FFFFFF"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gfText3"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageTick3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/gfText4"
+        app:layout_constraintTop_toBottomOf="@+id/imageTick2"
+        app:srcCompat="@drawable/tick" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="345dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/gradient_button_background"
+        android:fontFamily="@font/museosans_500"
+        android:text="Create an account"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gfText4"
+        tools:ignore="HardcodedText,SpUsage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--
+android:gravity="center_horizontal"
+-->
